@@ -28,6 +28,8 @@ while running:
     pygame.display.flip()
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
-            pygame.quit()
-            running = False
+            mods=pygame.key.get_mods()
+            if event.key==pygame.K_z:
+                pygame.quit()
+                running = False
 

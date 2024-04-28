@@ -26,7 +26,6 @@ while running:
     screen.blit(scaledelliotposter,(x, y))
     manager.draw_ui(screen)
 
-
     pygame.display.flip()
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
